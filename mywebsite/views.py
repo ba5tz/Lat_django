@@ -13,15 +13,3 @@ def index(request):
         ]
     }
     return render(request, 'index.html', context)
-
-def angka(request,input):
-    heading = "<h1>Home</h1>"
-    strangka = "angka :" + input
-    str = heading + strangka
-    return HttpResponse(str)
-
-def tanggal(request,tahun):
-    heading = "<h1>Page tanggal</h1>"
-    strangka = "tahun :" + tahun
-    str = heading + strangka
-    return HttpResponse(str)
