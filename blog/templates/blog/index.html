@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block app_css %}
+<link rel="stylesheet" href="{% static "blog/css/style.css"%}" type="text/css">
+{% endblock app_css %}
+
+{% block header %}
+<h1 class="text-left text-light" style="margin-top: 100px" >{{heading}}</h1>
+<p class="lead text-left text-light">{{subheading}}</p>
+
+{% endblock header%}
+
+
+
+{% block content %}
+
+<div class="row" style="height:400px">
+    {% for post in Posts %}
+    <h3>{{post.title}}</h3><br>
+    <p class="lead text-justify">{{post.body}}</p>
+    <p>{{post.date}}</p>
+    {% endfor %}
+</div>
+
+{% endblock content %}

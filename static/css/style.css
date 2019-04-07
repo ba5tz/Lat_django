@@ -1,0 +1,6 @@
+.jumbotron {
+    background-image: url("/static/img/12.jpg");
+    background-position: top;
+    height: 400px;
+    background-size: cover;
+}
