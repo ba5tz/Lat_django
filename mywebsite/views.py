@@ -15,7 +15,7 @@ def index(request):
     return render(request, 'index.html', context)
 
 def angka(request,input):
-    heading = "<h1>ini Home</h1>"
+    heading = "<h1>Home</h1>"
     strangka = "angka :" + input
     str = heading + strangka
     return HttpResponse(str)
